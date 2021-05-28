@@ -1,0 +1,25 @@
+@import './_shared-field-styles.css';
+
+:host {
+  padding: 0;
+  line-height: var(--lumo-text-field-size);
+}
+
+[part='input-field'] {
+  background-color: var(--lumo-base-color);
+  box-shadow: var(--hedge-input-field-box-shadow);
+  font-weight: 400;
+  transition: box-shadow 0.2s;
+}
+
+:host(:hover:not([readonly])) [part='input-field']::after {
+  display: none;
+}
+
+:host(:hover) [part='input-field'] {
+  box-shadow: 0 0 0 1px var(--lumo-contrast-10pct), var(--hedge-input-field-box-shadow);
+}
+
+:host([focused]) [part='input-field'] {
+  box-shadow: 0 0 0 2px var(--lumo-primary-color);
+}

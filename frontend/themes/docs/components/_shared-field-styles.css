@@ -1,0 +1,45 @@
+[part='label'] {
+  font-weight: 600;
+  color: var(--lumo-body-text-color);
+  padding-bottom: var(--lumo-space-s);
+  margin-left: 0;
+}
+
+[part='helper-text'],
+[part='helper-text'] ::slotted(*) {
+  margin-left: 0;
+}
+
+:host([required]) [part='label']::after {
+  content: '*';
+  color: var(--lumo-error-text-color);
+}
+
+[part='error-message']:not(:empty)::before,
+[part='error-message']:not(:empty)::after {
+  height: var(--lumo-space-s);
+}
+
+/* Always show help text before the input field */
+
+[part='label'] {
+  order: -2;
+}
+
+[part='helper-text'] {
+  order: -1;
+}
+
+:host([has-helper]) [part='helper-text']::before {
+  display: none;
+}
+
+:host([has-helper]) [part='helper-text']::after {
+  content: '';
+  display: block;
+  height: var(--lumo-space-s);
+}
+
+:host([has-helper]) [part='label'] {
+  padding-bottom: var(--lumo-space-xs);
+}

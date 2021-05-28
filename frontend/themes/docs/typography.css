@@ -1,0 +1,30 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--lumo-header-text-color);
+}
+
+h1 {
+  font-stretch: 75%;
+  font-weight: 600;
+}
+
+h2,
+h3 {
+  font-stretch: 80%;
+  font-weight: 600;
+}
+
+h4,
+h5 {
+  font-stretch: 90%;
+  font-weight: 600;
+}
+
+a:any-link {
+  color: var(--lumo-primary-text-color);
+  text-decoration: underline;
+}

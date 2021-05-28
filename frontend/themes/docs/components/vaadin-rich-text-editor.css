@@ -1,0 +1,12 @@
+[part='toolbar'] {
+  background-color: var(--lumo-base-color);
+}
+
+/* Stronger selector to override the default Lumo selector */
+:host(:not([readonly])) [part='content'][part='content'] {
+  border-top: 1px solid var(--lumo-contrast-10pct);
+}
+
+:host(:not([theme~='no-border'])) {
+  border-radius: var(--lumo-border-radius-l);
+}

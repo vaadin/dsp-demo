@@ -1,0 +1,28 @@
+@import '../typography.css';
+
+[part='footer'] {
+  background-color: transparent;
+  margin-top: var(--lumo-space-m);
+  padding: 0 calc(var(--lumo-space-s) * 2);
+}
+
+[part='header'],
+.header {
+  margin-top: 0;
+}
+
+:not([dir='rtl']) > .cancel-button {
+  flex-grow: 0;
+  margin-right: 0;
+  margin-left: var(--lumo-space-s);
+}
+
+[dir='rtl'] > .cancel-button {
+  flex-grow: 0;
+  margin-right: var(--lumo-space-s);
+  margin-left: 0;
+}
+
+.reject-button {
+  order: -1;
+}

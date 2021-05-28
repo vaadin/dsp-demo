@@ -1,0 +1,9 @@
+:host(:not([focused]):not(:hover)) [part='input-field'] {
+  box-shadow: 1px 0 0 0 var(--lumo-base-color), var(--hedge-input-field-box-shadow);
+}
+
+/* Raise above the time picker when focused, to allow the focus outline to show completely */
+:host([focused]) {
+  position: relative;
+  z-index: 1;
+}

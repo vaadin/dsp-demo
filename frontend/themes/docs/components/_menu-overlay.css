@@ -1,0 +1,9 @@
+[part='content'] {
+  padding-left: 0;
+  padding-right: 0;
+  /* Override item border radius. Remember to keep a unit, so that calc()'s still work */
+  --lumo-border-radius: 0px;
+  --lumo-border-radius-m: 0px;
+  /* Remove "padding" from combo box overlay */
+  --iron-list-items-container_-_border-width: var(--lumo-space-xs) 0;
+}

@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Archivo';
+  /* TODO how does this work when the Vaadin theme is packaged into a JAR? Do we need to load it twice? */
+  src: url('../../frontend/themes/docs/fonts/Archivo-subset.woff2') format('woff2-variations');
+  font-weight: 400 600;
+  font-stretch: 70% 100%;
+  font-style: normal;
+}
+
+html {
+  --docs-font-family: 'Archivo', Helvetica, Arial, sans-serif;
+  --docs-font-weight-heading: 600;
+  --docs-link-color: hsl(270, 100%, 41%);
+
+  --docs-tab-selected-color: var(--docs-link-color);
+
+  /* Use the same colors as for lumo-shade/contrast */
+  --docs-gray-50: hsla(267, 25%, 10%, 0.05);
+  --docs-gray-75: hsla(267, 25%, 10%, 0.1);
+  --docs-gray-100: hsla(267, 25%, 10%, 0.2);
+  --docs-gray-200: hsla(267, 25%, 10%, 0.3);
+  --docs-gray-300: hsla(267, 25%, 10%, 0.4);
+  --docs-gray-400: hsla(267, 25%, 10%, 0.5);
+  --docs-gray-500: hsla(267, 25%, 10%, 0.6);
+  --docs-gray-600: hsla(267, 25%, 10%, 0.7);
+  --docs-gray-700: hsla(267, 25%, 10%, 0.8);
+  --docs-gray-800: hsla(267, 25%, 10%, 0.9);
+  --docs-gray-900: hsl(270, 27%, 10%);
+
+  --docs-layout-max-width: auto;
+  --docs-article-max-width: 70rem;
+
+  --docs-header-background-color: hsl(270, 98%, 47%);
+  --docs-header-color: #fff;
+}
+
+h1 {
+  font-stretch: 75%;
+}
+
+h2,
+h3 {
+  font-stretch: 80%;
+}
+
+h4,
+h5 {
+  font-stretch: 90%;
+}
+
+[class*='MainLayout'][class*='content'] {
+  max-width: var(--docs-article-max-width);
+}
+[class*='MainLayout'][class*='drawer']:not([class*='drawerCurtain']) {
+  width: 14rem;
+}
+
+[class*='docsHeader'] {
+  --docs-heading-text-color: initial;
+}
+
+[class*='docsHeader'] [class*='searchButton'] {
+  background: var(--docs-gray-300);
+  color: inherit;
+}

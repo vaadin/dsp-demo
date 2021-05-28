@@ -1,0 +1,16 @@
+:host([aria-haspopup='true']:not([part='overflow-button'])) [part='label'] {
+  display: flex;
+  align-items: center;
+  overflow: visible;
+}
+
+:host([aria-haspopup='true']:not([part='overflow-button'])) [part='label']::after {
+  font-family: 'lumo-icons';
+  content: var(--lumo-icons-dropdown);
+  flex: none;
+}
+
+:host([aria-haspopup='true']:not([part='overflow-button']):not([theme='tertiary-inline']))
+  [part='label']::after {
+  margin-inline-end: -0.3em;
+}

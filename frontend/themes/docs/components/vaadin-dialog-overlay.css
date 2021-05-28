@@ -1,0 +1,5 @@
+@import '../typography.css';
+
+[part='overlay'] {
+  border-radius: var(--lumo-border-radius-l);
+}

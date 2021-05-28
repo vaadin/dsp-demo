@@ -1,0 +1,36 @@
+---
+title: Hedge Design System
+layout: index
+---
+
+= Hedge
+:toc: macro
+
+[.fullbleed]
+image::hero.jpg[Hedge: Get over the top]
+
+[.lead]
+Hedge is the design system for AcmePhinance Ltd. web applications.
+It consists of design tokens, components, and guidelines that allow designers and developers to collaborate and create high quality and consistent UIs.
+
+.Made with Design System Publisher
+[IMPORTANT]
+====
+Hedge is based on the http://vaadin.com/design-system[Vaadin Design System], and this website was made with Design System Publisher – a documentation toolkit for Vaadin-based design systems.
+
+[.buttons]
+- https://pages.vaadin.com/design-system-publisher[Design System Publisher]
+- https://github.com/vaadin/dsp-demo[Website source]
+====
+
+:components-path-prefix: components/
+include::components/index.asciidoc[tag=component-list]
+
+++++
+<style>
+  [class*=pageHeader],
+  nav[aria-label=breadcrumb] {
+    display: none;
+  }
+</style>
+++++

@@ -1,0 +1,45 @@
+:host {
+  font-weight: 550;
+  margin: 0;
+}
+
+:host(:not([theme~='tertiary-inline']):not([theme~='primary']):not([theme~='error']):not([theme~='success']):not([disabled])) {
+  color: var(--lumo-body-text-color);
+}
+
+:host([theme~='error']:not([theme~='primary']):not([theme*='tertiary'])) {
+  background-color: var(--lumo-error-color-10pct);
+}
+
+:host([theme~='success']:not([theme~='primary']):not([theme*='tertiary'])) {
+  background-color: var(--lumo-success-color-10pct);
+}
+
+/* For some reason there's a stronger selector in Menu Bar buttons */
+:host([theme~='tertiary'][theme~='tertiary']) {
+  font-weight: 500;
+  padding: 0 calc(var(--lumo-button-size) / 4 + var(--lumo-border-radius) / 2);
+}
+
+:host([theme~='tertiary']:not([focus-ring])) {
+  box-shadow: inset 0 0 0 1px var(--lumo-contrast-10pct);
+}
+
+:host([theme~='primary']) {
+  min-width: calc(var(--lumo-button-size) * 2);
+}
+
+:host([theme~='primary'][disabled]) {
+  background-color: var(--lumo-contrast-10pct);
+  color: var(--lumo-disabled-text-color);
+}
+
+:host(vaadin-menu-bar-button) {
+  margin: 0 1px;
+  margin-left: 0;
+}
+
+:host(:nth-last-of-type(2):first-of-type) {
+  margin: 0;
+  border-radius: var(--lumo-border-radius-m);
+}

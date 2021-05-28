@@ -1,0 +1,256 @@
+---
+title: Components
+order: 30
+section-nav: expanded
+---
+
+= Components
+
+:components-path-prefix:
+
+// tag::component-list[]
+
+
+[.cards]
+== Actions & Feedback
+
+
+=== Anchor
+include::actions/anchor/index.asciidoc[tag=description]
+<<{components-path-prefix}actions/anchor#,See Anchor>>
+
+
+=== Button
+include::actions/button/index.asciidoc[tag=description]
+<<{components-path-prefix}actions/button#,See Button>>
+
+
+=== Confirm Dialog
+include::actions/confirm-dialog/index.asciidoc[tag=description]
+<<{components-path-prefix}actions/confirm-dialog#,See Confirm Dialog>>
+
+
+=== Context Menu
+include::actions/context-menu/index.asciidoc[tag=description]
+<<{components-path-prefix}actions/context-menu#,See Context Menu>>
+
+
+=== List Box
+include::actions/list-box/index.asciidoc[tag=description]
+<<{components-path-prefix}actions/list-box#,See List Box>>
+
+
+=== Login
+include::actions/login/index.asciidoc[tag=description]
+<<{components-path-prefix}actions/login#,See Login>>
+
+
+=== Menu Bar
+include::actions/menu-bar/index.asciidoc[tag=description]
+<<{components-path-prefix}actions/menu-bar#,See Menu Bar>>
+
+
+=== Notification
+include::actions/notification/index.asciidoc[tag=description]
+<<{components-path-prefix}actions/notification#,See Notification>>
+
+
+=== Progress Bar
+include::actions/progress-bar/index.asciidoc[tag=description]
+<<{components-path-prefix}actions/progress-bar#,See Progress Bar>>
+
+
+
+
+
+
+
+
+[.cards]
+== Containers
+
+
+=== Accordion
+include::containers/accordion/index.asciidoc[tag=description]
+<<{components-path-prefix}containers/accordion#,See Accordion>>
+
+
+=== Details
+include::containers/details/index.asciidoc[tag=description]
+<<{components-path-prefix}containers/details#,See Details>>
+
+
+=== Dialog
+include::containers/dialog/index.asciidoc[tag=description]
+<<{components-path-prefix}containers/dialog#,See Dialog>>
+
+
+=== Tabs
+include::containers/tabs/index.asciidoc[tag=description]
+<<{components-path-prefix}containers/tabs#,See Tabs>>
+
+
+=== Scroller
+include::containers/scroller/index.asciidoc[tag=description]
+<<{components-path-prefix}containers/scroller#,See Scroller>>
+
+
+
+
+[.cards]
+== Data Entry & Display
+
+
+=== Avatar
+include::data/avatar/index.asciidoc[tag=description]
+<<{components-path-prefix}data/avatar#,See Avatar>>
+
+
+=== Badge
+include::data/badge/index.asciidoc[tag=description]
+<<{components-path-prefix}data/badge#,See Badge>>
+
+
+=== Charts
+Feature-rich interactive graph library that answers the data visualization needs of modern web applications.
+// include::charts/index.asciidoc[tag=description]
+<<{components-path-prefix}data/charts#,See Charts>>
+
+
+=== CRUD
+include::data/crud/index.asciidoc[tag=description]
+<<{components-path-prefix}data/crud#,See CRUD>>
+
+
+=== Grid
+include::data/grid/index.asciidoc[tag=description]
+<<{components-path-prefix}data/grid#,See Grid>>
+
+
+=== Grid Pro
+include::data/grid-pro/index.asciidoc[tag=description]
+<<{components-path-prefix}data/grid-pro#,See Grid Pro>>
+
+
+=== Messages
+include::data/messages/index.asciidoc[tag=description]
+<<{components-path-prefix}data/messages#,See Messages>>
+
+
+=== Tree Grid
+include::data/tree-grid/index.asciidoc[tag=description]
+<<{components-path-prefix}data/tree-grid#,See Tree Grid>>
+
+
+
+
+
+
+
+[.cards]
+== Inputs
+
+
+=== Checkbox
+include::inputs/checkbox/index.asciidoc[tag=description]
+<<{components-path-prefix}inputs/checkbox#,See Checkbox>>
+
+
+=== Combo Box
+include::inputs/combo-box/index.asciidoc[tag=description]
+<<{components-path-prefix}inputs/combo-box#,See Combo Box>>
+
+
+=== Custom Field
+include::inputs/custom-field/index.asciidoc[tag=description]
+<<{components-path-prefix}inputs/custom-field#,See Custom Field>>
+
+
+=== Date Picker
+include::inputs/date-picker/index.asciidoc[tag=description]
+<<{components-path-prefix}inputs/date-picker#,See Date Picker>>
+
+
+=== Email Field
+include::inputs/email-field/index.asciidoc[tag=description]
+<<{components-path-prefix}inputs/email-field#,See Email Field>>
+
+
+=== Number Field
+include::inputs/number-field/index.asciidoc[tag=description]
+<<{components-path-prefix}inputs/number-field#,See Number Field>>
+
+
+=== Password Field
+include::inputs/password-field/index.asciidoc[tag=description]
+<<{components-path-prefix}inputs/password-field#,See Password Field>>
+
+
+=== Radio Button
+include::inputs/radio-button/index.asciidoc[tag=description]
+<<{components-path-prefix}inputs/radio-button#,See Radio Button>>
+
+
+=== Rich Text Editor
+include::inputs/rich-text-editor/index.asciidoc[tag=description]
+<<{components-path-prefix}inputs/rich-text-editor#,See Rich Text Editor>>
+
+
+=== Select
+include::inputs/select/index.asciidoc[tag=description]
+<<{components-path-prefix}inputs/select#,See Select>>
+
+
+=== Text Area
+include::inputs/text-area/index.asciidoc[tag=description]
+<<{components-path-prefix}inputs/text-area#,See Text Area>>
+
+
+=== Text Field
+include::inputs/text-field/index.asciidoc[tag=description]
+<<{components-path-prefix}inputs/text-field#,See Text Field>>
+
+
+=== Time Picker
+include::inputs/time-picker/index.asciidoc[tag=description]
+<<{components-path-prefix}inputs/time-picker#,See Time Picker>>
+
+
+=== Upload
+include::inputs/upload/index.asciidoc[tag=description]
+<<{components-path-prefix}inputs/upload#,See Upload>>
+
+
+
+
+
+
+[.cards]
+== Layouts
+
+
+=== App Layout
+include::layouts/app-layout/index.asciidoc[tag=description]
+<<{components-path-prefix}layouts/app-layout#,See App Layout>>
+
+
+=== Basic Layouts
+include::layouts/basic-layouts/index.asciidoc[tag=description]
+<<{components-path-prefix}layouts/basic-layouts#,See Basic Layouts>>
+
+
+=== Board
+include::layouts/board/index.asciidoc[tag=description]
+<<{components-path-prefix}layouts/board#,See Board>>
+
+
+=== Form Layout
+include::layouts/form-layout/index.asciidoc[tag=description]
+<<{components-path-prefix}layouts/form-layout#,See Form Layout>>
+
+
+=== Split Layout
+include::layouts/split-layout/index.asciidoc[tag=description]
+<<{components-path-prefix}layouts/split-layout#,See Split Layout>>
+
+// end::component-list[]

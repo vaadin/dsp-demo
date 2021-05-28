@@ -1,0 +1,11 @@
+:host::before,
+:host::after {
+  width: 100%;
+  left: 0;
+  transform: scale(0);
+}
+
+:host([selected])::before,
+:host([selected])::after {
+  transform: scale(1);
+}

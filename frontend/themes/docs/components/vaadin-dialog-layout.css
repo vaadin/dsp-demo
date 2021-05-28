@@ -1,0 +1,9 @@
+[part='footer'] {
+  background-color: transparent;
+  border-top: 1px solid var(--lumo-contrast-10pct);
+}
+
+[part='footer'] ::slotted(*) {
+  margin-left: var(--lumo-space-xs);
+  margin-right: var(--lumo-space-xs);
+}

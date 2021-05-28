@@ -1,0 +1,9 @@
+:host(:not([checked])) [part='radio'] {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px var(--lumo-contrast-20pct);
+}
+
+:host(:not([checked]):not([indeterminate]):not([disabled]):hover) [part='radio'] {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px var(--lumo-contrast-30pct);
+}

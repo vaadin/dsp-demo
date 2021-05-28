@@ -1,0 +1,12 @@
+vaadin-crud-grid,
+slot[name='grid']::slotted(*) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+[part='toolbar'] {
+  background-color: var(--lumo-base-color);
+  border-color: var(--lumo-contrast-20pct);
+  border-bottom-left-radius: var(--lumo-border-radius-l);
+  border-bottom-right-radius: var(--lumo-border-radius-l);
+}
