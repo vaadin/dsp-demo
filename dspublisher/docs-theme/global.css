@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Archivo';
   /* TODO how does this work when the Vaadin theme is packaged into a JAR? Do we need to load it twice? */
-  src: url('../../frontend/themes/docs/fonts/Archivo-subset.woff2') format('woff2-variations');
+  src: url('../../frontend/themes/hedge/fonts/Archivo-subset.woff2') format('woff2-variations');
   font-weight: 400 600;
   font-stretch: 70% 100%;
   font-style: normal;

@@ -1,11 +1,1 @@
 @import 'vaadin-grid-styling.css';
-
-:host(:not([theme~='no-border'])) {
-  border-radius: var(--lumo-border-radius-l);
-  overflow: hidden;
-}
-
-:host > div,
-:host > div > table {
-  border-radius: inherit;
-}

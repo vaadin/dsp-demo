@@ -1,0 +1,49 @@
+@import './typography.css';
+
+[theme~='dark'] {
+  /* Colors generated using demo.vaadin.com/lumo-editor */
+  --lumo-base-color: hsl(266, 6%, 16%);
+
+  --lumo-shade-5pct: hsla(260, 10%, 3%, 0.05);
+  --lumo-shade-10pct: hsla(260, 10%, 3%, 0.1);
+  --lumo-shade-20pct: hsla(260, 10%, 3%, 0.2);
+  --lumo-shade-30pct: hsla(260, 10%, 3%, 0.3);
+  --lumo-shade-40pct: hsla(260, 10%, 3%, 0.4);
+  --lumo-shade-50pct: hsla(260, 10%, 3%, 0.5);
+  --lumo-shade-60pct: hsla(260, 10%, 3%, 0.6);
+  --lumo-shade-70pct: hsla(260, 10%, 3%, 0.7);
+  --lumo-shade-80pct: hsla(260, 10%, 3%, 0.8);
+  --lumo-shade-90pct: hsla(260, 10%, 3%, 0.9);
+  --lumo-shade: hsl(260, 10%, 3%);
+
+  --lumo-tint-5pct: hsla(270, 100%, 98%, 0.05);
+  --lumo-tint-10pct: hsla(270, 100%, 98%, 0.1);
+  --lumo-tint-20pct: hsla(270, 100%, 98%, 0.2);
+  --lumo-tint-30pct: hsla(270, 100%, 98%, 0.3);
+  --lumo-tint-40pct: hsla(270, 100%, 98%, 0.4);
+  --lumo-tint-50pct: hsla(270, 100%, 98%, 0.5);
+  --lumo-tint-60pct: hsla(270, 100%, 98%, 0.6);
+  --lumo-tint-70pct: hsla(270, 100%, 98%, 0.7);
+  --lumo-tint-80pct: hsla(270, 100%, 98%, 0.8);
+  --lumo-tint-90pct: hsla(270, 100%, 98%, 0.9);
+  --lumo-tint: hsl(270, 100%, 98%);
+
+  --lumo-primary-text-color: hsl(270, 87%, 68%);
+  --lumo-primary-color-50pct: rgba(120, 12, 228, 0.5);
+  --lumo-primary-color-10pct: rgba(120, 12, 228, 0.1);
+  --lumo-primary-color: hsl(270, 90%, 47%);
+  --lumo-error-text-color: hsl(346, 91%, 66%);
+  --lumo-error-color-50pct: rgba(223, 42, 84, 0.5);
+  --lumo-error-color-10pct: rgba(223, 42, 84, 0.1);
+  --lumo-error-color: hsl(346, 74%, 52%);
+  --lumo-success-text-color: hsl(155, 73%, 44%);
+  --lumo-success-color-50pct: rgba(6, 172, 103, 0.5);
+  --lumo-success-color-10pct: rgba(6, 172, 103, 0.1);
+  --lumo-success-color: hsl(155, 93%, 35%);
+}
+
+* {
+  /* Hedge DS additions */
+  --hedge-input-field-box-shadow: 0 0 0 1px var(--lumo-contrast-10pct),
+    0 2px 4px -1px var(--lumo-shade-10pct);
+}
