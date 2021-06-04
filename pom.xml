@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.vaadin.demo</groupId>
-    <artifactId>docs</artifactId>
-    <name>Docs</name>
-    <version>2.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <groupId>org.vaadin.demo</groupId>
+    <artifactId>dsp-demo</artifactId>
+    <name>Design System Publisher Demo</name>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -13,7 +13,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- tag::vaadin-version[] -->
-        <vaadin.version>20.0.0.beta1</vaadin.version>
+        <vaadin.version>20.0.0</vaadin.version>
         <!-- end::vaadin-version[] -->
 
         <drivers.dir>${project.basedir}/drivers</drivers.dir>
@@ -92,6 +92,11 @@
     </dependencyManagement>
 
     <dependencies>
+        <!-- <dependency>
+            <groupId>org.vaadin.demo</groupId>
+            <artifactId>hedge</artifactId>
+            <version>1.0.0</version>
+        </dependency> -->
         <dependency>
             <groupId>com.vaadin</groupId>
             <!-- Replace artifactId with vaadin-core to use only free components -->
