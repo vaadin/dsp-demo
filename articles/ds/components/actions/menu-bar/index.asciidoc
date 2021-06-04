@@ -14,15 +14,15 @@ Menu Bar is a horizontal button bar with hierarchical drop-down menus.
 Menu items can either trigger an action, open a menu, or work as a toggle.
 // end::description[]
 
-.Work In Progress
-[NOTE]
-====
-The Java examples for this component are currently in progress.
-In the meantime, you can view the previous examples.
-
-[.buttons]
-- https://vaadin.com/components/vaadin-menu-bar/java-examples[Java Component Examples]
-====
+// .Work In Progress
+// [NOTE]
+// ====
+// The Java examples for this component are currently in progress.
+// In the meantime, you can view the previous examples.
+//
+// [.buttons]
+// - https://vaadin.com/components/vaadin-menu-bar/java-examples[Java Component Examples]
+// ====
 
 [.example]
 --

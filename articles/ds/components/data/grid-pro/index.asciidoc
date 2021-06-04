@@ -15,15 +15,15 @@ page-links:
 Grid Pro is a commercial extension of the Grid component that provides  inline editing with full keyboard navigation.
 // end::description[]
 
-.Work In Progress
-[NOTE]
-====
-The Java examples for this component are currently in progress.
-In the meantime, you can view the previous examples.
-
-[.buttons]
-- https://vaadin.com/components/vaadin-grid-pro/java-examples[Java Component Examples]
-====
+// .Work In Progress
+// [NOTE]
+// ====
+// The Java examples for this component are currently in progress.
+// In the meantime, you can view the previous examples.
+//
+// [.buttons]
+// - https://vaadin.com/components/vaadin-grid-pro/java-examples[Java Component Examples]
+// ====
 
 [.example]
 --

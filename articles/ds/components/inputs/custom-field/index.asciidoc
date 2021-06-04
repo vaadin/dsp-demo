@@ -27,14 +27,14 @@ include::{root}/frontend/demo/component/custom-field/custom-field-basic.ts[rende
 // ----
 --
 
-.Work In Progress
-[NOTE]
-====
-The Java examples for this component are currently in progress. In the meantime, you can view the previous examples.
-
-[.buttons]
-- https://vaadin.com/components/vaadin-custom-field/java-examples[Java Component Examples]
-====
+// .Work In Progress
+// [NOTE]
+// ====
+// The Java examples for this component are currently in progress. In the meantime, you can view the previous examples.
+//
+// [.buttons]
+// - https://vaadin.com/components/vaadin-custom-field/java-examples[Java Component Examples]
+// ====
 
 == Basic Usage
 

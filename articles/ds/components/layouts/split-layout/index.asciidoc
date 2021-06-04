@@ -13,15 +13,15 @@ page-links:
 Split Layout is a component with two content areas and a draggable split handle between them.
 // end::description[]
 
-.Work In Progress
-[NOTE]
-====
-The Java examples for this component are currently in progress.
-In the meantime, you can view the previous examples.
-
-[.buttons]
-- https://vaadin.com/components/vaadin-split-layout/java-examples[Java Component Examples]
-====
+// .Work In Progress
+// [NOTE]
+// ====
+// The Java examples for this component are currently in progress.
+// In the meantime, you can view the previous examples.
+//
+// [.buttons]
+// - https://vaadin.com/components/vaadin-split-layout/java-examples[Java Component Examples]
+// ====
 
 [.example]
 --
@@ -161,7 +161,7 @@ include::{root}/frontend/demo/component/splitlayout/detail-content.ts[group=Type
 // ----
 // include::{root}/src/main/java/com/vaadin/demo/component/splitlayout/SplitLayoutToggle.java[render,tags=snippet,indent=0,group=Java]
 // ----
--- 
+--
 
 == Theme Variants
 

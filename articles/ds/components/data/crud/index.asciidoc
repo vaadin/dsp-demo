@@ -15,15 +15,15 @@ CRUD is a component for managing a dataset.
 It allows for easy displaying, editing, creating, and deleting of items.
 // end::description[]
 
-.Work In Progress
-[NOTE]
-====
-The usage examples for this component are currently in progress.
-In the meantime, you can view the previous examples for the Java/Flow component.
-
-[.buttons]
-- https://vaadin.com/components/vaadin-crud/java-examples[Java Component Examples]
-====
+// .Work In Progress
+// [NOTE]
+// ====
+// The usage examples for this component are currently in progress.
+// In the meantime, you can view the previous examples for the Java/Flow component.
+//
+// [.buttons]
+// - https://vaadin.com/components/vaadin-crud/java-examples[Java Component Examples]
+// ====
 
 [.example]
 --

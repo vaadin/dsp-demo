@@ -13,15 +13,15 @@ page-links:
 App Layout is a component for building common application layouts.
 // end::description[]
 
-.Work in progress
-[NOTE]
-====
-The Java examples for this component are in progress.
-In the meantime, you can view the previous examples.
-
-[.buttons]
-- https://vaadin.com/components/vaadin-app-layout/java-examples[Java Component Examples]
-====
+// .Work in progress
+// [NOTE]
+// ====
+// The Java examples for this component are in progress.
+// In the meantime, you can view the previous examples.
+//
+// [.buttons]
+// - https://vaadin.com/components/vaadin-app-layout/java-examples[Java Component Examples]
+// ====
 
 include::../../_shared.asciidoc[tag=scaled-examples]
 include::../../_shared.asciidoc[tag=scaled-examples-responsive]

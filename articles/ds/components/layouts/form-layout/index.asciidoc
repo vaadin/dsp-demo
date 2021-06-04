@@ -28,16 +28,16 @@ include::{root}/frontend/demo/component/formlayout/form-layout-basic.ts[render,t
 
 --
 
-.Work In Progress
-[NOTE]
-====
-The usage examples for this component are currently in progress.
-In the meantime, you can view the previous examples for the web component and the Java/Flow component.
-
-[.buttons]
-- https://vaadin.com/components/vaadin-form-layout/html-examples[Web Component Examples]
-- https://vaadin.com/components/vaadin-form-layout/java-examples[Java Component Examples]
-====
+// .Work In Progress
+// [NOTE]
+// ====
+// The usage examples for this component are currently in progress.
+// In the meantime, you can view the previous examples for the web component and the Java/Flow component.
+//
+// [.buttons]
+// - https://vaadin.com/components/vaadin-form-layout/html-examples[Web Component Examples]
+// - https://vaadin.com/components/vaadin-form-layout/java-examples[Java Component Examples]
+// ====
 
 == Columns
 
