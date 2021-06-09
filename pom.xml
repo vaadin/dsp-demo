@@ -54,7 +54,7 @@
             <id>Vaadin Directory</id>
             <url>https://maven.vaadin.com/vaadin-addons</url>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
         </repository>
     </repositories>
@@ -97,6 +97,16 @@
             <artifactId>hedge</artifactId>
             <version>1.0.0</version>
         </dependency> -->
+        <!-- <dependency>
+            <groupId>com.vaadin.componentfactory</groupId>
+            <artifactId>multi-combo-box-flow</artifactId>
+            <version>0.4.0</version>
+        </dependency> -->
+        <dependency>
+            <groupId>com.vaadin.componentfactory</groupId>
+            <artifactId>vcf-date-range-picker</artifactId>
+            <version>1.2.1</version>
+        </dependency>
         <dependency>
             <groupId>com.vaadin</groupId>
             <!-- Replace artifactId with vaadin-core to use only free components -->

@@ -1,0 +1,9 @@
+[part="input-field"],
+:host(:hover) [part="input-field"],
+:host([focused]) [part="input-field"] {
+  box-shadow: var(--_hedge-date-range-picker-input-field-box-shadow, var(--hedge-input-field-box-shadow));
+}
+
+:host([part="end-text-field"]) [part="input-field"] {
+  padding-inline-start: 1em;
+}

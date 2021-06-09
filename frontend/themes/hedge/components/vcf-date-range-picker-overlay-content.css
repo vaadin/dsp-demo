@@ -1,0 +1,10 @@
+[part="toolbar"] [part$="button"] {
+  box-shadow: none;
+  font-size: var(--lumo-font-size-s);
+  height: var(--lumo-size-s);
+  padding: 0 var(--lumo-space-xs);
+}
+
+[part="toolbar"] [part="cancel-button"] {
+  margin-top: auto;
+}

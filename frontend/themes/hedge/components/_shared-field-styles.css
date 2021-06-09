@@ -43,3 +43,7 @@
 :host([has-helper]) [part='label'] {
   padding-bottom: var(--lumo-space-xs);
 }
+
+:host([has-label])::before {
+  margin-top: calc(var(--lumo-font-size-s) + var(--lumo-space-s));
+}

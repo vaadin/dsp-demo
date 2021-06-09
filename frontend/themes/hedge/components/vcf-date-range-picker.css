@@ -1,0 +1,27 @@
+:host {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+[part="dash"] {
+  background: var(--lumo-base-color);
+  display: flex;
+  width: 1em;
+  margin-inline-end: calc(2px - 1em);
+  z-index: 1;
+  position: relative;
+  color: var(--lumo-secondary-text-color);
+}
+
+[part="dash"]::before {
+  content: "–";
+  font: inherit;
+}
+
+:host(:hover) {
+  --_hedge-date-range-picker-input-field-box-shadow: 0 0 0 1px var(--lumo-contrast-10pct), var(--hedge-input-field-box-shadow);
+}
+
+:host([focused]) {
+  --_hedge-date-range-picker-input-field-box-shadow: 0 0 0 2px var(--lumo-primary-color);
+}

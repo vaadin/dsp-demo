@@ -4,3 +4,6 @@ target
 webpack.generated.js
 pnpmfile.js
 .npmrc
+.classpath
+.project
+.settings
