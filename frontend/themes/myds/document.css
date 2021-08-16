@@ -23,22 +23,22 @@ html {
 
   /* Colors generated using demo.vaadin.com/lumo-editor */
 
-  --lumo-shade-5pct: hsla(267, 25%, 10%, 0.05);
-  --lumo-shade-10pct: hsla(267, 25%, 10%, 0.1);
-  --lumo-shade-20pct: hsla(267, 25%, 10%, 0.2);
-  --lumo-shade-30pct: hsla(267, 25%, 10%, 0.3);
-  --lumo-shade-40pct: hsla(267, 25%, 10%, 0.4);
-  --lumo-shade-50pct: hsla(267, 25%, 10%, 0.5);
-  --lumo-shade-60pct: hsla(267, 25%, 10%, 0.6);
-  --lumo-shade-70pct: hsla(267, 25%, 10%, 0.7);
-  --lumo-shade-80pct: hsla(267, 25%, 10%, 0.8);
-  --lumo-shade-90pct: hsla(267, 25%, 10%, 0.9);
-  --lumo-shade: hsl(270, 27%, 10%);
+  --lumo-shade-5pct: hsla(213, 45%, 10%, 0.05);
+  --lumo-shade-10pct: hsla(213, 45%, 10%, 0.1);
+  --lumo-shade-20pct: hsla(213, 45%, 10%, 0.2);
+  --lumo-shade-30pct: hsla(213, 45%, 10%, 0.3);
+  --lumo-shade-40pct: hsla(213, 45%, 10%, 0.4);
+  --lumo-shade-50pct: hsla(213, 45%, 10%, 0.5);
+  --lumo-shade-60pct: hsla(213, 45%, 10%, 0.6);
+  --lumo-shade-70pct: hsla(213, 45%, 10%, 0.7);
+  --lumo-shade-80pct: hsla(213, 45%, 10%, 0.8);
+  --lumo-shade-90pct: hsla(213, 45%, 10%, 0.9);
+  --lumo-shade: hsl(213, 47%, 10%);
 
-  --lumo-primary-text-color: hsl(270, 100%, 41%);
-  --lumo-primary-color-50pct: hsla(270, 98%, 47%, 0.5);
-  --lumo-primary-color-10pct: hsla(270, 98%, 47%, 0.1);
-  --lumo-primary-color: hsl(270, 98%, 47%);
+  --lumo-primary-text-color: hsl(213, 92%, 55%);
+  --lumo-primary-color-50pct: hsla(213, 92%, 55%, 0.5);
+  --lumo-primary-color-10pct: hsla(213, 92%, 55%, 0.1);
+  --lumo-primary-color: hsl(213, 92%, 55%);
 
   --lumo-error-text-color: hsl(346, 95%, 44%);
   --lumo-error-color-50pct: hsla(346, 83%, 49%, 0.5);

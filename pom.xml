@@ -94,7 +94,7 @@
     <dependencies>
         <!-- <dependency>
             <groupId>org.vaadin.demo</groupId>
-            <artifactId>hedge</artifactId>
+            <artifactId>myds</artifactId>
             <version>1.0.0</version>
         </dependency> -->
         <!-- <dependency>

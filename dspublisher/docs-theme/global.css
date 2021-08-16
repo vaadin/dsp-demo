@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Archivo';
   /* TODO how does this work when the Vaadin theme is packaged into a JAR? Do we need to load it twice? */
-  src: url('../../frontend/themes/hedge/fonts/Archivo-subset.woff2') format('woff2-variations');
+  src: url('../../frontend/themes/myds/fonts/Archivo-subset.woff2') format('woff2-variations');
   font-weight: 400 600;
   font-stretch: 70% 100%;
   font-style: normal;
@@ -10,7 +10,7 @@
 html {
   --docs-font-family: 'Archivo', Helvetica, Arial, sans-serif;
   --docs-font-weight-heading: 600;
-  --docs-link-color: hsl(270, 100%, 41%);
+  --docs-link-color: hsl(213, 92%, 55%);
 
   --docs-tab-selected-color: var(--docs-link-color);
 
@@ -30,8 +30,10 @@ html {
   --docs-layout-max-width: auto;
   --docs-article-max-width: 70rem;
 
-  --docs-header-background-color: hsl(270, 98%, 47%);
+  --docs-header-background-color: hsl(213, 92%, 55%);
   --docs-header-color: #fff;
+
+  --docs-surface-color-2: #F8FAFD;
 }
 
 h1 {
@@ -57,9 +59,15 @@ h5 {
 
 [class*='docsHeader'] {
   --docs-heading-text-color: initial;
+  background: linear-gradient(90deg, #2584F6 0%, #FCD6DA 100%);
 }
 
 [class*='docsHeader'] [class*='searchButton'] {
-  background: var(--docs-gray-300);
-  color: inherit;
+  border: 0;
+  color: var(--docs-secondary-text-color);
+}
+
+[class*='docsHeader'] [class*='searchButton']:hover,
+[class*='docsHeader'] [class*='searchButton']:focus {
+  color: var(--docs-body-text-color);
 }

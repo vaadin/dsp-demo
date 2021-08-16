@@ -43,7 +43,7 @@
 }
 
 * {
-  /* Hedge DS additions */
-  --hedge-input-field-box-shadow: 0 0 0 1px var(--lumo-contrast-10pct),
+  /* MyDS additions */
+  --myds-input-field-box-shadow: 0 0 0 1px var(--lumo-contrast-10pct),
     0 2px 4px -1px var(--lumo-shade-10pct);
 }

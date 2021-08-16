@@ -19,9 +19,9 @@
 }
 
 :host(:hover) {
-  --_hedge-date-range-picker-input-field-box-shadow: 0 0 0 1px var(--lumo-contrast-10pct), var(--hedge-input-field-box-shadow);
+  --_myds-date-range-picker-input-field-box-shadow: 0 0 0 1px var(--lumo-contrast-10pct), var(--myds-input-field-box-shadow);
 }
 
 :host([focused]) {
-  --_hedge-date-range-picker-input-field-box-shadow: 0 0 0 2px var(--lumo-primary-color);
+  --_myds-date-range-picker-input-field-box-shadow: 0 0 0 2px var(--lumo-primary-color);
 }

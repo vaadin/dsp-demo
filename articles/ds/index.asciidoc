@@ -1,22 +1,27 @@
 ---
-title: Hedge Design System
+title: My Design System
 layout: index
 ---
 
-= Hedge
+= My Design System
 :toc: macro
+
+[.hero]
+--
+[discrete]
+== My Design System
 
 [.fullbleed]
 image::hero.jpg[Hedge: Get over the top]
+--
 
 [.lead]
-Hedge is the design system for AcmePhinance Ltd. web applications.
-It consists of design tokens, components, and guidelines that allow designers and developers to collaborate and create high quality and consistent UIs.
+My Design System consists of design tokens, components, and guidelines that allow designers and developers to collaborate and create high quality and consistent UIs.
 
 .Made with Design System Publisher
 [IMPORTANT]
 ====
-Hedge is based on the http://vaadin.com/design-system[Vaadin Design System], and this website was made with Design System Publisher – a documentation toolkit for Vaadin-based design systems.
+This example design system is based on the http://vaadin.com/design-system[Vaadin Design System], and this website was made with Design System Publisher – a documentation toolkit for Vaadin-based design systems.
 
 [.buttons]
 - https://pages.vaadin.com/design-system-publisher[Design System Publisher]
@@ -32,5 +37,52 @@ include::components/index.asciidoc[tag=component-list]
   nav[aria-label=breadcrumb] {
     display: none;
   }
+
+  .hero {
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: var(--docs-space-xl);
+  }
+
+  .hero .imageblock {
+    margin: 0;
+  }
+
+  .hero h2 {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    font-size: 8vw;
+    font-size: min(9vw, 5rem);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    text-shadow: 0px 12px 26px rgb(102 157 215 / 20%);
+    white-space: nowrap;
+    font-stretch: 70%;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #ddd;
+  }
+
+  @supports (mix-blend-mode: hard-light) {
+    .hero h2 {
+      color: #000;
+      text-shadow: none;
+      background-color: #ddd;
+    }
+
+    .hero .imageblock {
+      z-index: 2;
+      mix-blend-mode: hard-light;
+    }
+  }
+
 </style>
 ++++
