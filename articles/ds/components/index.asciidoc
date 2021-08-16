@@ -15,11 +15,6 @@ section-nav: expanded
 == Actions & Feedback
 
 
-=== Anchor
-include::actions/anchor/index.asciidoc[tag=description]
-<<{components-path-prefix}actions/anchor#,See Anchor>>
-
-
 === Button
 include::actions/button/index.asciidoc[tag=description]
 <<{components-path-prefix}actions/button#,See Button>>
