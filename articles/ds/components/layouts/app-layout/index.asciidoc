@@ -1,10 +1,8 @@
 ---
 title: App Layout
-layout: tabbed-page
-tab-title: Usage
 page-links:
-  - https://github.com/vaadin/flow-components/releases/tag/{moduleMavenVersion:com.vaadin:vaadin-app-layout-flow}[Flow {moduleMavenVersion:com.vaadin:vaadin-app-layout-flow}]
-  - https://github.com/vaadin/web-components/releases/tag/v{moduleNpmVersion:vaadin-app-layout}[Web Component {moduleNpmVersion:vaadin-app-layout}]
+  - 'API: https://cdn.vaadin.com/vaadin-web-components/{moduleNpmVersion:vaadin-app-layout}/#/elements/vaadin-app-layout[TypeScript] / https://vaadin.com/api/platform/{moduleMavenVersion:com.vaadin:vaadin}/com/vaadin/flow/component/applayout/AppLayout.html[Java]'
+  - 'Source: https://github.com/vaadin/web-components/tree/v{moduleNpmVersion:vaadin-app-layout}/packages/vaadin-app-layout[TypeScript] / https://github.com/vaadin/flow-components/tree/{moduleMavenVersion:com.vaadin:vaadin}/vaadin-app-layout-flow-parent[Java]'
 ---
 
 = App Layout
@@ -12,16 +10,6 @@ page-links:
 // tag::description[]
 App Layout is a component for building common application layouts.
 // end::description[]
-
-// .Work in progress
-// [NOTE]
-// ====
-// The Java examples for this component are in progress.
-// In the meantime, you can view the previous examples.
-//
-// [.buttons]
-// - https://vaadin.com/components/vaadin-app-layout/java-examples[Java Component Examples]
-// ====
 
 include::../../_shared.asciidoc[tag=scaled-examples]
 include::../../_shared.asciidoc[tag=scaled-examples-responsive]
@@ -33,12 +21,17 @@ include::../../_shared.asciidoc[tag=scaled-examples-responsive]
 ----
 include::{root}/frontend/demo/component/app-layout/app-layout-basic.ts[render, frame, tags=snippet, indent=0, group=TypeScript]
 ----
+
+[source,java]
+----
+include::{root}/src/main/java/com/vaadin/demo/component/applayout/AppLayoutBasic.java[render,frame,tags=snippet,indent=0,group=Java]
+----
 --
 
 The layout consists of three sections: a horizontal navigation bar (*navbar*), a collapsible navigation drawer (*drawer*) and a content area.
 An application's main navigation blocks should be positioned in the navbar and/or drawer while views are rendered in the content area.
 
-App Layout is responsive and adjusts automatically to fit desktop, tablet and mobile screen sizes.
+App Layout is responsive and adjusts automatically to fit desktop, tablet, and mobile screen sizes.
 
 == Navbar Placement
 
@@ -54,6 +47,11 @@ Application headers contain, for example, the application's name and branding as
 ----
 include::{root}/frontend/demo/component/app-layout/app-layout-navbar-placement.ts[render, frame, tags=snippet, indent=0, group=TypeScript]
 ----
+
+[source,java]
+----
+include::{root}/src/main/java/com/vaadin/demo/component/applayout/AppLayoutNavbarPlacement.java[render,frame,tags=snippet,indent=0,group=Java]
+----
 --
 
 When placed to the side, the navbar is often seen as a view header, housing the view's title, actions and secondary navigation that only relate to the current view.
@@ -64,6 +62,11 @@ When placed to the side, the navbar is often seen as a view header, housing the 
 [source,html]
 ----
 include::{root}/frontend/demo/component/app-layout/app-layout-navbar-placement-side.ts[render, frame, tags=snippet, indent=0, group=TypeScript]
+----
+
+[source,java]
+----
+include::{root}/src/main/java/com/vaadin/demo/component/applayout/AppLayoutNavbarPlacementSide.java[render,frame,tags=snippet,indent=0,group=Java]
 ----
 --
 
@@ -93,6 +96,11 @@ When the navbar is used for navigation, the *touch-optimized navbar* slot can be
 ----
 include::{root}/frontend/demo/component/app-layout/app-layout-bottom-navbar.ts[render, frame, tags=snippet, indent=0, group=TypeScript]
 ----
+
+[source,java]
+----
+include::{root}/src/main/java/com/vaadin/demo/component/applayout/AppLayoutBottomNavbar.java[render,frame,tags=snippet,indent=0,group=Java]
+----
 --
 
 == Best Practices
@@ -110,6 +118,11 @@ The navbar is a good choice for a small number of items (3–5), as these can fi
 ----
 include::{root}/frontend/demo/component/app-layout/app-layout-navbar.ts[render, frame, tags=snippet, indent=0, group=TypeScript]
 ----
+
+[source,java]
+----
+include::{root}/src/main/java/com/vaadin/demo/component/applayout/AppLayoutNavbar.java[render,frame,tags=snippet,indent=0,group=Java]
+----
 --
 
 When more items need to be displayed, or if small screen support is a priority, the drawer is a better choice, as it can accommodate a longer list of links without scrolling, and collapses into a hamburger menu on small screens.
@@ -122,6 +135,11 @@ Furthermore, a vertical list of items is easier for the user to scan.
 ----
 include::{root}/frontend/demo/component/app-layout/app-layout-drawer.ts[render, frame, tags=snippet, indent=0, group=TypeScript]
 ----
+
+[source,java]
+----
+include::{root}/src/main/java/com/vaadin/demo/component/applayout/AppLayoutDrawer.java[render,frame,tags=snippet,indent=0,group=Java]
+----
 --
 
 For applications that require multilevel or hierarchical navigation use the drawer to (at least) house the first level.
@@ -133,5 +151,10 @@ The secondary (and tertiary) navigation items can be placed in either the drawer
 [source,html]
 ----
 include::{root}/frontend/demo/component/app-layout/app-layout-secondary-navigation.ts[render, frame, tags=snippet, indent=0, group=TypeScript]
+----
+
+[source,java]
+----
+include::{root}/src/main/java/com/vaadin/demo/component/applayout/AppLayoutSecondaryNavigation.java[render,frame,tags=snippet,indent=0,group=Java]
 ----
 --

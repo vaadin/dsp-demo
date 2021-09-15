@@ -1,35 +1,28 @@
 ---
 title: Size and Space
 order: 30
+page-links:
+  - https://github.com/vaadin/web-components/blob/v{moduleNpmVersion:vaadin-lumo-styles}/packages/vaadin-lumo-styles/sizing.js[Source (size)]
+  - https://github.com/vaadin/web-components/blob/v{moduleNpmVersion:vaadin-lumo-styles}/packages/vaadin-lumo-styles/spacing.js[Source (space)]
 ---
 
 = Size and Space
 
-Use these CSS custom properties to apply consistent sizing and spacing across your application.
+Use these CSS Custom Properties to apply consistent sizing and spacing across your application.
 
-
-
-== Usage
-
-[.example]
---
-[source,typescript, role=hidden]
-----
-include::{root}/frontend/demo/foundation/lumo-tokens.ts[hidden]
-----
-
-[source,typescript]
-----
-include::{root}/frontend/demo/foundation/lumo-tokens.ts[tags="size,space"]
-----
---
+:import-name: lumo
+:module-name: size;space
+include::_shared.asciidoc[tag=importing]
 
 
 == Size
 
 Use these properties to adjust the sizing of regular elements (buttons, text fields, list items).
 
-Medium is the standard size, and it is primarily used to size buttons, text fields and list items. If you adjust the sizing, make sure to keep it large enough for touch targets.
+Medium is the standard size, and it is primarily used to size buttons, text fields and list items.
+If you adjust the sizing, make sure to keep it large enough for touch targets.
+
+See <<icons#size,Icons>> for properties that affect the sizing of icons.
 
 [.property-listing.previews, cols="1,>1"]
 |===
@@ -58,7 +51,8 @@ Small button and input field height
 
 === Compact Sizing
 
-Lumo has a compact sizing preset available. It reduces the font size and the sizing and spacing of all components, allowing you to place more components on the screen.
+Lumo has a compact sizing preset available.
+It reduces the font size and the sizing and spacing of all components, allowing you to place more components on the screen.
 
 Apply compact sizing by importing the style sheet, which sets new values for the
 <<typography#,Typography>> and the <<size>> and <<space>> CSS properties.

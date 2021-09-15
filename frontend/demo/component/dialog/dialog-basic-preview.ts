@@ -1,64 +1,69 @@
 import 'Frontend/demo/init'; // hidden-source-line
 
-import { html, LitElement } from 'lit-element';
-import { render } from 'lit-html';
-import { guard } from 'lit-html/directives/guard';
-
-import '@vaadin/vaadin-dialog/vaadin-dialog';
+import { css, html, LitElement } from 'lit';
+import '@vaadin/vaadin-notification/vaadin-notification';
 import '@vaadin/vaadin-button/vaadin-button';
 import '@vaadin/vaadin-text-field/vaadin-text-field';
 import '@vaadin/vaadin-ordered-layout/vaadin-horizontal-layout';
 import '@vaadin/vaadin-ordered-layout/vaadin-vertical-layout';
 
 export class Example extends LitElement {
-  render() {
-    return html`
-      <style>
-        /* Prevent the user from interacting with the preview dialog */
-        body::after {
-          content: '';
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 9999;
-          pointer-events: auto;
-        }
-      </style>
-      <vaadin-dialog
-        opened
-        no-close-on-outside-click
-        no-close-on-esc
-        .renderer="${guard([], () => (root: HTMLElement) => {
-          render(
-            html`
-              <vaadin-vertical-layout
-                theme="spacing"
-                style="width: 300px; max-width: 100%; align-items: stretch;"
-              >
-                <h2 style="margin: var(--lumo-space-m) 0 0 0; font-size: 1.5em; font-weight: bold;">
-                  New employee
-                </h2>
-                <vaadin-vertical-layout style="align-items: stretch;">
-                  <vaadin-text-field label="First name"></vaadin-text-field>
-                  <vaadin-text-field label="Last name"></vaadin-text-field>
-                </vaadin-vertical-layout>
-                <vaadin-horizontal-layout theme="spacing" style="justify-content: flex-end">
-                  <vaadin-button> Cancel </vaadin-button>
-                  <vaadin-button theme="primary"> Save changes </vaadin-button>
-                </vaadin-horizontal-layout>
-              </vaadin-vertical-layout>
-            `,
-            root
-          );
-        })}"
-      ></vaadin-dialog>
+  static get styles() {
+    return css`
+      :host {
+        display: flex !important;
+        justify-content: center;
+        background-color: var(--lumo-shade-20pct);
+        padding: var(--lumo-space-l);
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      .overlay {
+        display: flex;
+        justify-content: center;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+        background-color: var(--lumo-base-color);
+        background-image: linear-gradient(var(--lumo-tint-5pct), var(--lumo-tint-5pct));
+        border-radius: var(--lumo-border-radius-m);
+        box-shadow: 0 0 0 1px var(--lumo-shade-5pct), var(--lumo-box-shadow-m);
+        color: var(--lumo-body-text-color);
+        font-family: var(--lumo-font-family);
+        font-size: var(--lumo-font-size-m);
+        font-weight: 400;
+        line-height: var(--lumo-line-height-m);
+        letter-spacing: 0;
+        text-transform: none;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .content {
+        padding: var(--lumo-space-l);
+        width: 300px;
+        max-width: 100%;
+      }
     `;
   }
-
-  // Allow the CSS to target the body element
-  createRenderRoot() {
-    return this;
+  render() {
+    return html`
+      <div class="overlay">
+        <div class="content">
+          <vaadin-vertical-layout theme="spacing" style="align-items: stretch;">
+            <h2 style="margin: var(--lumo-space-m) 0 0 0;">New employee</h2>
+            <vaadin-vertical-layout style="align-items: stretch;">
+              <vaadin-text-field label="First name"></vaadin-text-field>
+              <vaadin-text-field label="Last name"></vaadin-text-field>
+            </vaadin-vertical-layout>
+            <vaadin-horizontal-layout theme="spacing" style="justify-content: flex-end">
+              <vaadin-button>Cancel</vaadin-button>
+              <vaadin-button theme="primary">Save changes</vaadin-button>
+            </vaadin-horizontal-layout>
+          </vaadin-vertical-layout>
+        </div>
+      </div>
+    `;
   }
 }

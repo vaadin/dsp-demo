@@ -1,22 +1,24 @@
-import 'Frontend/demo/init'; // hidden-full-source-line
+import 'Frontend/demo/init'; // hidden-source-line
 
-import { html, LitElement, customElement, internalProperty, query } from 'lit-element';
+import { html, LitElement } from 'lit';
+import { customElement, query, state } from 'lit/decorators.js';
 import '@vaadin/vaadin-rich-text-editor/vaadin-rich-text-editor';
 import '@vaadin/vaadin-text-field/vaadin-text-area';
 
 import { applyTheme } from 'Frontend/generated/theme';
 import { RichTextEditorElement } from '@vaadin/vaadin-rich-text-editor/vaadin-rich-text-editor';
-import { TextAreaElement } from '@vaadin/vaadin-text-field/vaadin-text-area';
+import { TextArea } from '@vaadin/vaadin-text-field/vaadin-text-area';
 
 @customElement('rich-text-editor-set-get-value')
 export class Example extends LitElement {
-  constructor() {
-    super();
+  protected createRenderRoot() {
+    const root = super.createRenderRoot();
     // Apply custom theme (only supported if your app uses one)
-    applyTheme(this.shadowRoot);
+    applyTheme(root);
+    return root;
   }
 
-  @internalProperty()
+  @state()
   private htmlValue = '';
 
   @query('vaadin-rich-text-editor')
@@ -32,7 +34,7 @@ export class Example extends LitElement {
 
       <vaadin-text-area
         label="Html Value"
-        @change="${(e: CustomEvent) => this.setHtmlValue((e.target as TextAreaElement).value)}"
+        @change="${(e: CustomEvent) => this.setHtmlValue((e.target as TextArea).value)}"
         placeholder="Type html string here to set it as value to the Rich Text Editor above..."
         style="width: 100%;"
         .value="${this.htmlValue}"

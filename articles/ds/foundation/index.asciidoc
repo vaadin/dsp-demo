@@ -15,3 +15,9 @@ section-nav: expanded
 <<shape#, Shape>>::
 
 <<elevation#, Elevation>>::
+
+<<interaction#, Interaction>>::
+
+<<icons#, Icons>>::
+
+<<utility-classes#, Utility Classes>>::

@@ -10,30 +10,28 @@
 html {
   --docs-font-family: 'Archivo', Helvetica, Arial, sans-serif;
   --docs-font-weight-heading: 600;
-  --docs-link-color: hsl(213, 92%, 55%);
+  --docs-link-color: hsl(230,79%,57%);
 
   --docs-tab-selected-color: var(--docs-link-color);
 
-  /* Use the same colors as for lumo-shade/contrast */
-  --docs-gray-50: hsla(267, 25%, 10%, 0.05);
-  --docs-gray-75: hsla(267, 25%, 10%, 0.1);
-  --docs-gray-100: hsla(267, 25%, 10%, 0.2);
-  --docs-gray-200: hsla(267, 25%, 10%, 0.3);
-  --docs-gray-300: hsla(267, 25%, 10%, 0.4);
-  --docs-gray-400: hsla(267, 25%, 10%, 0.5);
-  --docs-gray-500: hsla(267, 25%, 10%, 0.6);
-  --docs-gray-600: hsla(267, 25%, 10%, 0.7);
-  --docs-gray-700: hsla(267, 25%, 10%, 0.8);
-  --docs-gray-800: hsla(267, 25%, 10%, 0.9);
-  --docs-gray-900: hsl(270, 27%, 10%);
+  --docs-gray-0: hsla(213, 45%, 100%, 1);
+  --docs-gray-25: hsla(213, 45%, 97%, 1);
+  --docs-gray-50: hsla(213, 38%, 95%, 1);
+  --docs-gray-75: hsla(213, 27%, 87%, 1);
+  --docs-gray-100: hsla(213, 20%, 76%, 1);
+  --docs-gray-200: hsla(213, 15%, 64%, 1);
+  --docs-gray-300: hsla(213, 15%, 52%, 1);
+  --docs-gray-400: hsla(213, 15%, 42%, 1);
+  --docs-gray-500: hsla(213, 15%, 33%, 1);
+  --docs-gray-600: hsla(213, 15%, 25%, 1);
+  --docs-gray-700: hsla(213, 15%, 20%, 1);
+  --docs-gray-800: hsla(213, 15%, 17%, 1);
+  --docs-gray-900: hsla(213, 15%, 15%, 1);
 
   --docs-layout-max-width: auto;
-  --docs-article-max-width: 70rem;
 
-  --docs-header-background-color: hsl(213, 92%, 55%);
+  --docs-header-background: linear-gradient(90deg, #2553f6 0%, #FCD6DA 100%);
   --docs-header-color: #fff;
-
-  --docs-surface-color-2: #F8FAFD;
 }
 
 h1 {
@@ -48,26 +46,4 @@ h3 {
 h4,
 h5 {
   font-stretch: 90%;
-}
-
-[class*='MainLayout'][class*='content'] {
-  max-width: var(--docs-article-max-width);
-}
-[class*='MainLayout'][class*='drawer']:not([class*='drawerCurtain']) {
-  width: 14rem;
-}
-
-[class*='docsHeader'] {
-  --docs-heading-text-color: initial;
-  background: linear-gradient(90deg, #2584F6 0%, #FCD6DA 100%);
-}
-
-[class*='docsHeader'] [class*='searchButton'] {
-  border: 0;
-  color: var(--docs-secondary-text-color);
-}
-
-[class*='docsHeader'] [class*='searchButton']:hover,
-[class*='docsHeader'] [class*='searchButton']:focus {
-  color: var(--docs-body-text-color);
 }

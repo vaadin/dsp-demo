@@ -90,6 +90,11 @@ include::containers/scroller/index.asciidoc[tag=description]
 <<{components-path-prefix}containers/scroller#,See Scroller>>
 
 
+=== Virtual List
+include::containers/virtual-list/index.asciidoc[tag=description]
+<<{components-path-prefix}containers/virtual-list#,See Virtual List>>
+
+
 
 
 [.cards]
@@ -104,12 +109,6 @@ include::data/avatar/index.asciidoc[tag=description]
 === Badge
 include::data/badge/index.asciidoc[tag=description]
 <<{components-path-prefix}data/badge#,See Badge>>
-
-
-=== Charts
-Feature-rich interactive graph library that answers the data visualization needs of modern web applications.
-// include::charts/index.asciidoc[tag=description]
-<<{components-path-prefix}data/charts#,See Charts>>
 
 
 === CRUD
@@ -127,9 +126,9 @@ include::data/grid-pro/index.asciidoc[tag=description]
 <<{components-path-prefix}data/grid-pro#,See Grid Pro>>
 
 
-=== Messages
-include::data/messages/index.asciidoc[tag=description]
-<<{components-path-prefix}data/messages#,See Messages>>
+=== Message List
+include::data/message-list/index.asciidoc[tag=description]
+<<{components-path-prefix}data/message-list#,See Message List>>
 
 
 === Tree Grid
@@ -169,6 +168,11 @@ include::inputs/date-picker/index.asciidoc[tag=description]
 === Email Field
 include::inputs/email-field/index.asciidoc[tag=description]
 <<{components-path-prefix}inputs/email-field#,See Email Field>>
+
+
+=== Message Input
+include::inputs/message-input/index.asciidoc[tag=description]
+<<{components-path-prefix}inputs/message-input#,See Message Input>>
 
 
 === Number Field

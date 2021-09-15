@@ -35,10 +35,10 @@ html {
   --lumo-shade-90pct: hsla(213, 45%, 10%, 0.9);
   --lumo-shade: hsl(213, 47%, 10%);
 
-  --lumo-primary-text-color: hsl(213, 92%, 55%);
-  --lumo-primary-color-50pct: hsla(213, 92%, 55%, 0.5);
-  --lumo-primary-color-10pct: hsla(213, 92%, 55%, 0.1);
-  --lumo-primary-color: hsl(213, 92%, 55%);
+  --lumo-primary-text-color: hsl(230,79%,57%);
+  --lumo-primary-color-50pct: hsla(230, 79%, 57%, 0.5);
+  --lumo-primary-color-10pct: hsla(230, 79%, 57%, 0.1);
+  --lumo-primary-color: hsl(230, 79%, 57%);
 
   --lumo-error-text-color: hsl(346, 95%, 44%);
   --lumo-error-color-50pct: hsla(346, 83%, 49%, 0.5);

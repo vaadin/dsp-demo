@@ -24,14 +24,18 @@ public class ConfirmDialogBasic extends Div {
     status.setVisible(false);
 
     ConfirmDialog dialog = new ConfirmDialog();
-    dialog.setHeader("Apply changes");
-    dialog.setText("Are you sure you want to apply the changes you’ve made?");
+    dialog.setHeader("Unsaved changes");
+    dialog.setText("There are unsaved changes. Do you want to discard or save them?");
 
     dialog.setCancelable(true);
     dialog.addCancelListener(event -> setStatus("Canceled"));
 
+    dialog.setRejectable(true);
+    dialog.setRejectText("Discard");
+    dialog.addRejectListener(event -> setStatus("Discarded"));
+
     dialog.setConfirmText("Save");
-    dialog.addConfirmListener(event -> setStatus("Applied"));
+    dialog.addConfirmListener(event -> setStatus("Saved"));
 
     Button button = new Button("Open confirm dialog");
     button.addClickListener(event -> {

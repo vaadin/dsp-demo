@@ -1,0 +1,34 @@
+---
+title: Interaction
+order: 60
+page-links:
+  - https://github.com/vaadin/web-components/blob/v{moduleNpmVersion:vaadin-lumo-styles}/packages/vaadin-lumo-styles/style.js[Source]
+---
+
+= Interaction
+
+Use these CSS Custom Properties to apply consistent interaction styles for components.
+
+:import-name: lumo
+:module-name: style
+include::_shared.asciidoc[tag=importing]
+
+
+== Clickable Cursor
+
+How clickable items are indicated to the users of pointer devices (the mouse) can be configured to suit your application's target audience.
+
+You can either follow the “web” approach and use the pointer (hand) cursor for clickable items, or the “desktop” approach and use the default (arrow) cursor.
+
+++++
+<style>
+</style>
+++++
+
+[.property-listing.previews, cols="1,>1"]
+|===
+| Description | CSS Custom Property
+
+| [.preview(--lumo-clickable-cursor).shape.l]*Cursor* +
+| [custom-property]#--lumo-clickable-cursor#
+|===

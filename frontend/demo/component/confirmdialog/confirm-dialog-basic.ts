@@ -1,21 +1,23 @@
 import 'Frontend/demo/init'; // hidden-source-line
 
-import { html, LitElement, internalProperty, customElement } from 'lit-element';
+import { html, LitElement } from 'lit';
+import { customElement, state } from 'lit/decorators.js';
 import '@vaadin/vaadin-confirm-dialog/vaadin-confirm-dialog';
 import { applyTheme } from 'Frontend/generated/theme';
 
 @customElement('confirm-dialog-basic')
 export class Example extends LitElement {
-  constructor() {
-    super();
+  protected createRenderRoot() {
+    const root = super.createRenderRoot();
     // Apply custom theme (only supported if your app uses one)
-    applyTheme(this.shadowRoot);
+    applyTheme(root);
+    return root;
   }
 
-  @internalProperty()
+  @state()
   private dialogOpened = false;
 
-  @internalProperty()
+  @state()
   private status = '';
 
   render() {
@@ -30,15 +32,18 @@ export class Example extends LitElement {
 
         <!-- tag::snippet[] -->
         <vaadin-confirm-dialog
-          header="Apply changes"
+          header="Unsaved changes"
           cancel
           @cancel="${() => (this.status = 'Canceled')}"
-          confirm-text="Apply"
-          @confirm="${() => (this.status = 'Applied')}"
+          reject
+          reject-text="Discard"
+          @reject="${() => (this.status = 'Discarded')}"
+          confirm-text="Save"
+          @confirm="${() => (this.status = 'Saved')}"
           .opened="${this.dialogOpened}"
           @opened-changed="${this.openedChanged}"
         >
-          Are you sure you want to apply the changes you’ve made?
+          There are unsaved changes. Do you want to discard or save them?
         </vaadin-confirm-dialog>
         <!-- end::snippet[] -->
 
