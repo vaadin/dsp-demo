@@ -28,10 +28,10 @@
   --lumo-tint-90pct: hsla(213, 100%, 98%, 0.9);
   --lumo-tint: hsl(213, 100%, 98%);
 
-  --lumo-primary-text-color: hsl(213, 87%, 68%);
-  --lumo-primary-color-50pct: hsla(213,89%,47%,.5);
-  --lumo-primary-color-10pct: hsla(213,89%,47%,.1);
-  --lumo-primary-color: hsl(213, 90%, 47%);
+  --lumo-primary-text-color: hsl(230,89%,69%);
+  --lumo-primary-color-50pct: hsla(230,79%,57%,.5);
+  --lumo-primary-color-10pct: hsla(230,79%,57%,.1);
+  --lumo-primary-color: hsl(230,79%,57%);
   --lumo-error-text-color: hsl(346, 91%, 66%);
   --lumo-error-color-50pct: rgba(223, 42, 84, 0.5);
   --lumo-error-color-10pct: rgba(223, 42, 84, 0.1);

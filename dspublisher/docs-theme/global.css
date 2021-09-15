@@ -34,6 +34,10 @@ html {
   --docs-header-color: #fff;
 }
 
+html[theme~="dark"] {
+  --docs-link-color: hsl(230,89%,69%);
+}
+
 h1 {
   font-stretch: 75%;
 }
