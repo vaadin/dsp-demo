@@ -24,7 +24,7 @@ My Design System consists of design tokens, components, and guidelines that allo
 This example design system is based on the http://vaadin.com/design-system[Vaadin Design System], and this website was made with Design System Publisher – a documentation toolkit for Vaadin-based design systems.
 
 [.buttons]
-- https://pages.vaadin.com/design-system-publisher[Design System Publisher]
+- https://vaadin.com/design-system-publisher[Design System Publisher]
 - https://github.com/vaadin/dsp-demo[Website source]
 ====
 
