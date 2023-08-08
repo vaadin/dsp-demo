@@ -83,20 +83,20 @@
     "@vaadin/vaadin-usage-statistics": "2.1.0",
     "@vaadin/vaadin-virtual-list": "22.0.0-alpha5",
     "@webcomponents/shadycss": "1.9.6",
-    "construct-style-sheets-polyfill": "2.4.16",
+    "construct-style-sheets-polyfill": "3.0.4",
     "date-fns": "2.23.0",
-    "lit": "2.0.0-rc.3",
+    "lit": "2.0.0",
     "lumo-css-framework": "^4.0.8",
     "mobx": "^6.1.5",
     "promise-file-reader": "^1.0.3",
-    "vanilla-colorful": "^0.5.3"
+    "vanilla-colorful": "^0.5.3",
+    "@vaadin/common-frontend": "0.0.17"
   },
   "devDependencies": {
     "@types/validator": "13.1.0",
     "@typescript-eslint/eslint-plugin": "^4.9.1",
     "@typescript-eslint/parser": "^4.9.1",
     "@vaadin/application-theme-plugin": "./target/plugins/application-theme-plugin",
-    "@vaadin/stats-plugin": "./target/plugins/stats-plugin",
     "@vaadin/theme-live-reload-plugin": "./target/plugins/theme-live-reload-plugin",
     "@vaadin/theme-loader": "./target/plugins/theme-loader",
     "chokidar": "^3.5.0",
@@ -122,16 +122,17 @@
     "loader-utils": "2.0.0",
     "prettier": "^2.2.1",
     "ts-loader": "8.0.12",
-    "typescript": "4.3.3",
+    "typescript": "4.4.3",
     "validator": "13.1.17",
     "webpack": "4.46.0",
-    "webpack-cli": "3.3.12",
-    "webpack-dev-server": "3.11.0",
+    "webpack-cli": "4.9.0",
+    "webpack-dev-server": "4.1.1",
     "webpack-manifest-plugin": "3.0.0",
     "webpack-merge": "4.2.2",
     "workbox-core": "6.2.0",
     "workbox-precaching": "6.2.0",
-    "workbox-webpack-plugin": "6.2.0"
+    "workbox-webpack-plugin": "6.2.0",
+    "esbuild-loader": "2.15.1"
   },
   "husky": {
     "hooks": {
@@ -237,10 +238,11 @@
       "@vaadin/vaadin-usage-statistics": "2.1.0",
       "@vaadin/vaadin-virtual-list": "22.0.0-alpha5",
       "@webcomponents/shadycss": "1.9.6",
-      "construct-style-sheets-polyfill": "2.4.16",
+      "construct-style-sheets-polyfill": "3.0.4",
       "date-fns": "2.23.0",
-      "lit": "2.0.0-rc.3",
-      "mobx": "^6.1.5"
+      "lit": "2.0.0",
+      "mobx": "^6.1.5",
+      "@vaadin/common-frontend": "0.0.17"
     },
     "devDependencies": {
       "@types/validator": "13.1.0",
@@ -256,16 +258,17 @@
       "lit-css-loader": "0.1.0",
       "loader-utils": "2.0.0",
       "ts-loader": "8.0.12",
-      "typescript": "4.3.3",
+      "typescript": "4.4.3",
       "validator": "13.1.17",
       "webpack": "4.46.0",
-      "webpack-cli": "3.3.12",
-      "webpack-dev-server": "3.11.0",
+      "webpack-cli": "4.9.0",
+      "webpack-dev-server": "4.1.1",
       "webpack-manifest-plugin": "3.0.0",
       "webpack-merge": "4.2.2",
       "workbox-core": "6.2.0",
       "workbox-precaching": "6.2.0",
-      "workbox-webpack-plugin": "6.2.0"
+      "workbox-webpack-plugin": "6.2.0",
+      "esbuild-loader": "2.15.1"
     },
     "hash": "65897e558a1d54dab2cf258085394b792fd33508172313be0e4f57df33df7362"
   }
