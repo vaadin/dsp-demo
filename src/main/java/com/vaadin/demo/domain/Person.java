@@ -3,7 +3,7 @@ package com.vaadin.demo.domain;
 import java.time.LocalDate;
 import java.util.Date;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties; // hidden-source-line
 

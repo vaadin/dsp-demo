@@ -16,7 +16,7 @@ public class NumberFieldStepperControls extends FormLayout {
         // tag::snippet[]
         IntegerField adultsField = new IntegerField();
         adultsField.setValue(2);
-        adultsField.setHasControls(true);
+        adultsField.setStepButtonsVisible(true);
         adultsField.setMin(0);
         adultsField.setMax(9);
         // end::snippet[]
@@ -24,7 +24,7 @@ public class NumberFieldStepperControls extends FormLayout {
 
         IntegerField childrenField = new IntegerField();
         childrenField.setValue(2);
-        childrenField.setHasControls(true);
+        childrenField.setStepButtonsVisible(true);
         childrenField.setMin(0);
         childrenField.setMax(9);
 
@@ -39,7 +39,7 @@ public class NumberFieldStepperControls extends FormLayout {
 
         IntegerField infantsField = new IntegerField();
         infantsField.setValue(1);
-        infantsField.setHasControls(true);
+        infantsField.setStepButtonsVisible(true);
         infantsField.setMin(0);
         infantsField.setMax(9);
         addFormItem(infantsField, "Infants");

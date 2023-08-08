@@ -18,7 +18,6 @@ public class UploadFinnishI18N extends UploadI18N {
         setAddFiles(new AddFiles()
                 .setOne("Valitse tiedosto...")
                 .setMany("Valitse tiedostot..."));
-        setCancel("Peruuta");
         setError(new Error()
                 .setTooManyFiles("Liian monta tiedostoa.")
                 .setFileIsTooBig("Tiedosto on liian suuri.")

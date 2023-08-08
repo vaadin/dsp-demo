@@ -21,7 +21,6 @@ public class UploadExamplesI18N extends UploadI18N {
         setAddFiles(new AddFiles()
                 .setOne("Upload File...")
                 .setMany("Upload Files..."));
-        setCancel("Cancel");
         setError(new Error()
                 .setTooManyFiles("Too Many Files.")
                 .setFileIsTooBig("File is Too Big.")
